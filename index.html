@@ -1,86 +1,121 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Karthik R | Cybersecurity Portfolio</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Hackson Community Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap" rel="stylesheet">
   <style>
     body {
-      background-color: #0d1117;
-      color: #c9d1d9;
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      padding: 20px;
-      max-width: 900px;
+      margin: 0;
+      background-color: #0d0d0d;
+      font-family: 'Share Tech Mono', monospace;
+      color: #00ff99;
+      overflow-x: hidden;
+    }
+    header {
+      background: url('banner-image.jpg') center/cover no-repeat;
+      height: 60vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      color: #00ff99;
+      box-shadow: 0 0 30px #00ff99;
+    }
+    header h1 {
+      font-size: 3em;
+      margin: 0;
+    }
+    header p {
+      font-size: 1.2em;
+      margin: 10px 0 0;
+    }
+    section {
+      padding: 4em 2em;
+      max-width: 1200px;
       margin: auto;
     }
-    h1, h2, h3 {
-      color: #58a6ff;
+    h2 {
+      font-size: 2em;
+      border-left: 5px solid #00ff99;
+      padding-left: 15px;
+      margin-bottom: 1em;
+    }
+    .card {
+      background: #1a1a1a;
+      border-radius: 10px;
+      padding: 2em;
+      margin-bottom: 2em;
+      transition: transform 0.3s, box-shadow 0.3s;
+      box-shadow: 0 0 10px #00ff99;
+    }
+    .card:hover {
+      transform: scale(1.03);
+      box-shadow: 0 0 20px #00ff99;
+    }
+    .contact {
+      text-align: center;
+      font-size: 1.1em;
+      padding: 1em;
+      background: #111;
+      border-top: 1px solid #00ff99;
     }
     a {
-      color: #58a6ff;
+      color: #00ffcc;
       text-decoration: none;
     }
     a:hover {
       text-decoration: underline;
     }
-    ul {
-      list-style-type: square;
-      padding-left: 20px;
-    }
-    .section {
-      margin-bottom: 30px;
-    }
-    .contact a {
-      display: block;
-      margin-bottom: 5px;
-    }
   </style>
 </head>
 <body>
+  <header>
+    <h1>Hackson Community</h1>
+    <p>Networking | Threat Hunting | Malware Analysis</p>
+  </header>
 
-  <h1>Karthik R</h1>
-  <p><strong>Cybersecurity Enthusiast | Ethical Hacker | Capture The Flag (CTF) Player | Linux & Network Explorer</strong></p>
-
-  <div class="section">
+  <section>
     <h2>About Me</h2>
-    <p>
-      I'm passionate about cybersecurity, with hands-on skills in penetration testing, Linux, and networking. 
-      I constantly sharpen my skills through CTFs, TryHackMe, and real-world labs. Currently building my expertise in malware analysis and ethical hacking.
-    </p>
-  </div>
+    <div class="card">
+      <p>I’m a cybersecurity enthusiast with a strong interest in threat hunting, networking, and malware analysis. Member of Hackson Community, focusing on secure hacking practices and community growth.</p>
+    </div>
 
-  <div class="section">
     <h2>Projects</h2>
-    <ul>
-      <li>🔍 YARA-based Malware Detection System</li>
-      <li>🛡️ IP Blocking Mini Project with Automation</li>
-      <li>🔐 Encrypted Chat App with Face Authentication</li>
-      <li>📁 Custom Image File Format (.ci)</li>
-    </ul>
-  </div>
+    <div class="card">
+      <p><strong>Malware Detector (Python)</strong><br>A system to scan and detect common malware using signature-based detection methods.</p>
+    </div>
+    <div class="card">
+      <p><strong>Firewall Rule Tester (Kali Linux)</strong><br>Simulated IPTables-based firewall rules and tested network behavior for educational labs.</p>
+    </div>
 
-  <div class="section">
-    <h2>Skills</h2>
-    <p>
-      Kali Linux, Bash Scripting, Networking (CompTIA Net+), YARA, Ghidra, Nmap, Wireshark, Burp Suite
-    </p>
-  </div>
-
-  <div class="section">
     <h2>Certifications</h2>
-    <ul>
-      <li>📜 Google Cybersecurity Professional Certificate</li>
-      <li>🎄 TryHackMe Advent of Cyber 2024</li>
-      <li>🎄 TryHackMe Advent of Cyber 2023</li>
-    </ul>
-  </div>
+    <div class="card">
+      <ul>
+        <li>Mastercard Cybersecurity Virtual Experience</li>
+        <li>TryHackMe: Intro to Malware Analysis</li>
+        <li>CTF Participation: St. Joseph’s Inter-College Challenge</li>
+      </ul>
+    </div>
 
-  <div class="section contact">
-    <h2>Contact</h2>
-    <a href="www.linkedin.com/in/karthikr-cybersecurity" target="_blank">🔗 LinkedIn</a>
-    <a href="mailto:karthikr017@gmail.com">📧 karthikr017@gmail.com</a>
-    <a href="https://github.com/karthik017" target="_blank">💻 GitHub</a>
-  </div>
+    <h2>Skills</h2>
+    <div class="card">
+      <ul>
+        <li>Networking & Threat Analysis</li>
+        <li>Reverse Engineering with Ghidra</li>
+        <li>Linux (Kali, Debian), Bash Scripting</li>
+        <li>Python, C Programming</li>
+        <li>CTF: OSINT, Forensics, Crypto</li>
+      </ul>
+    </div>
+  </section>
 
+  <div class="contact">
+    Contact: <a href="mailto:karthikr2125@gmail.com">karthikr2125@gmail.com</a>
+             <a href="www.linkedin.com/in/karthikr-cybersecurity" target="_blank">🔗 LinkedIn</a>
+             <a href="https://github.com/karthik017" target="_blank">💻 GitHub</a>
+  </div>
 </body>
 </html>
